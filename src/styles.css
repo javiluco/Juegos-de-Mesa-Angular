@@ -1,1 +1,182 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --text-color: #0a195f;
+    --bg-color: #fffffdef;
+    --sc-color: #340569de;
+
+    --estrategia: #6961ff;
+    --familiares: #84B6F4;
+    --cartas: #FDCAE1;
+    --party: #ffb861;
+
+    --radio: 18px;
+    --sombra: 0 14px 34px rgba(8, 43, 69, .10);
+
+    --descuento: oklch(75.523% 0.15559 63.576);
+    --borde: 2px rgba(8, 43, 69, .10);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Bricolage Grotesque", sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 0 0.1em;
+    border-radius: 0.5em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #070aa0b3;
+
+}
+
+.inicio main.container {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.inicio main h3 {
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--estrategia);
+}
+
+.inicio .p-title {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.inicio .img-main {
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.link-social {
+    font-weight: 600;
+    color: rgb(61, 5, 114);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.inicio .card-section {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.inicio .card-section:hover {
+    transform: translateY(-4px);
+}
+
+.inicio .card-section .card-title {
+    font-weight: 700;
+}
+
+.inicio .card-section {
+    color: var(--text-color);
+}
+
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.flotar {
+    animation-name: flotar;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.aparecer {
+    animation-name: aparecer;
+    animation-duration: 2s;
+}
+
+@keyframes sello {
+
+    0%,
+    100% {
+        transform: rotate(6deg);
+    }
+
+    50% {
+        transform: rotate(-6deg) scale(1.08);
+    }
+}
+
+.descuento {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: var(--descuento);
+    border: var(--borde);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-weight: 800;
+    font-size: 16px;
+    animation: sello 1.6s ease-in-out infinite;
+}
+
+@keyframes subir {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .img-main {
+        width: 500px;
+    }
+
+    .container-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,40 @@
+/* Nav */
+.bg-navbar {
+    background-color: rgb(61, 5, 114);
+}
+
+
+.img-logo {
+    width: 150px;
+}
+
+.img-main {
+    width: 300px;
+}
+
+.navbar-nav {
+    border-radius: 0.3em;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.3em;
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: rgb(5, 5, 97);
+    color: white;
+    border-radius: 0.5em;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    background-color: rgb(5, 5, 97);
+    color: white;
+    border-radius: 0.5em;
+}
+.navbar .navbar-nav .nav-link.active { 
+    font-weight: 700; 
+}
