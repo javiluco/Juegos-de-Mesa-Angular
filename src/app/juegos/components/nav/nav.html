@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-navbar py-2" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" routerLink="/inicio">
                 <img src="/logo2.png" alt="PLAYHEAD" class="img-logo flotar" style="max-height: 40px; width: auto;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavMenu"
@@ -17,40 +17,40 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav ms-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="estrategia.html">Estrategia</a>
+                            <a class="nav-link" routerLink="/estrategia">Estrategia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="familiares.html">Familiares</a>
+                            <a class="nav-link" routerLink="/familiares">Familiares</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="cartas.html">Cartas</a>
+                            <a class="nav-link" aria-current="page" RouterLink="cartas">Cartas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="juegos-party.html">Juegos Party</a>
+                            <a class="nav-link" routerLink="juegos-party">Juegos Party</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="carrito.html">Carrito</a>
+                            <a class="nav-link" routerLink="carrito">Carrito</a>
                         </li>
                         <!-- Personas que aun no inician sesión -->
                         <li class="nav-item">
-                            <a class="nav-link nav-invitado" href="registro.html">Registrarse</a>
+                            <a class="nav-link nav-invitado" routerLink="registro">Registrarse</a>
                         </li>
                         <li class="nav-item nav-invitado">
-                            <a class="nav-link" href="login.html">Login</a>
+                            <a class="nav-link" routerLink="login">Login</a>
                         </li>
                         <!-- Sólo el admin verá el inventario -->
                         <li class="nav-item">
-                            <a class="nav-link nav-admin" href="inventario.html">Inventario</a>
+                            <a class="nav-link nav-admin" routerLink="/inventario">Inventario</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-admin " href="clientes.html">Clientes</a>
+                            <a class="nav-link nav-admin " routerLink="/clientes">Clientes</a>
                         </li>
                         <!-- Usuarios autenticados y el admin verán su perfil -->
                         <li class="nav-item">
-                            <a class="nav-link nav-user" href="perfil.html">Mi Perfil</a>
+                            <a class="nav-link nav-user" routerLink="/perfil">Mi Perfil</a>
                         </li>
                         <li class="nav-item nav-user">
-                            <a class="nav-link" href="/index.html" id="btnLogout">Cerrar Sesión</a>
+                            <a class="nav-link" routerLink="/inicio" id="btnLogout">Cerrar Sesión</a>
                         </li>
 
                     </ul>

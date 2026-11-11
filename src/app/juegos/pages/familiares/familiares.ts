@@ -6,4 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './familiares.css',
   templateUrl: './familiares.html',
 })
-export class Familiares {}
+export default class Familiares {}
