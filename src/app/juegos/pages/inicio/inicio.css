@@ -1,0 +1,102 @@
+.sc-title {
+    font-size: 35px;
+    text-align: center;
+    animation: subir 650ms ease both;
+}
+
+.p-title {
+    font-size: 50px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.inicio main.container {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.inicio main h3 {
+    font-size: .95rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    color: var(--estrategia);
+}
+
+.inicio .p-title {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.inicio .img-main {
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
+.link-social {
+    font-weight: 600;
+    color: rgb(61, 5, 114);
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+}
+
+.inicio .card-section {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.inicio .card-section:hover {
+    transform: translateY(-4px);
+}
+
+.inicio .card-section .card-title {
+    font-weight: 700;
+}
+
+.inicio .card-section {
+    color: var(--text-color);
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card.estrategia {
+    background-color: var(--estrategia);
+}
+
+.card.familiares {
+    background-color: var(--familiares);
+}
+
+.card.cartas {
+    background-color: var(--cartas);
+}
+
+.card.party {
+    background-color: var(--party);
+}
+
+.mesure-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    width: 100%;
+    position: relative;
+}
+
+.card-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body-mesure {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.card-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
