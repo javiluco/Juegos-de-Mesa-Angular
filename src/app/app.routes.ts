@@ -22,6 +22,18 @@ export const routes: Routes = [
       path: 'juegos-party',
       loadComponent: () => import('./juegos/pages/party/party')
    },
+   {
+      path: 'registro',
+      loadComponent: () => import('./auth/pages/registro/registro')
+   },
+   {
+      path: 'login',
+      loadComponent: () => import('./auth/pages/login/login')
+   },
+   {
+      path: 'recuperar-password',
+      loadComponent: () => import('./auth/pages/recuperar-contrasena/recuperar-contrasena')
+   },
    { path: '', redirectTo: 'inicio', pathMatch: 'full' },
    { path: '**', redirectTo: 'inicio' }
 ];

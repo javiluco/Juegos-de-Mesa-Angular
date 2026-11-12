@@ -142,6 +142,54 @@ a {
 
 }
 
+/* LOGIN  - REGISTRO - RECUPERAR CONTRASEÑA */
+.bg-color {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 64px);
+    padding: 2rem 1rem;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 15% 20%, var(--estrategia) 0, transparent 35%),
+        radial-gradient(circle at 85% 15%, var(--cartas) 0, transparent 35%),
+        radial-gradient(circle at 80% 85%, var(--party) 0, transparent 35%),
+        radial-gradient(circle at 20% 90%, var(--familiares) 0, transparent 35%),
+        var(--bg-color);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.bg-logo{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color: var(--sc-color);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    width: 220px;
+}
+
+.auth-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 550px;
+}
+
+.bg-logo img{
+    width: 180px;
+    padding: 6px 0px;
+}
+.auth-title{
+    margin-bottom: .25rem;
+    margin-top: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-color); 
+    text-align: center;
+}
 @keyframes aparecer {
     0% {
         opacity: 0;

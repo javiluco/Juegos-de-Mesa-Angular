@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-recuperar-contrasena',
   styleUrl: './recuperar-contrasena.css',
   templateUrl: './recuperar-contrasena.html',
 })
-export class RecuperarContrasena {}
+export default class RecuperarContrasena {}

@@ -1,1 +1,30 @@
-<p>recuperar-contrasena works!</p>
+<div class="bg-color">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="card auth-card">
+                    <div class="card-body">
+                        <div class="bg-logo">
+                            <img src="logo2.png" alt="">
+                        </div>
+                        <h5 class="card-title auth-title">Recuperar Contraseña</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Te llegará un correo electrónico con los
+                            pasos a seguir.</h6>
+                        <form class="" id="formulario-recuperacion" novalidate>
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                                <div class="invalid-feedback error-vacio">Este campo es obligatorio.</div>
+                                <div class="invalid-feedback error-formato">Por favor poner un correo válido.</div>
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-3 w-100">Recuperar Contraseña</button>
+                        </form>
+                        <div class="text-center">
+                            <p class="form-text">Regresar al <a routerLink="/login" class="link-social">Login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
