@@ -74,29 +74,3 @@
     background-color: var(--party);
 }
 
-.mesure-card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    max-width: 360px;
-    width: 100%;
-    position: relative;
-}
-
-.card-img {
-    height: 300px;
-    object-fit: cover;
-}
-
-.card-body-mesure {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-}
-
-.card-section {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
