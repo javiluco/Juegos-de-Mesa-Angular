@@ -23,6 +23,15 @@ export const routes: Routes = [
       loadComponent: () => import('./juegos/pages/party/party')
    },
    {
+      path: 'carrito',
+      loadComponent: () => import('./juegos/pages/carrito/carrito')
+   },
+   {
+      path: 'perfil',
+      loadComponent: () => import('./juegos/pages/perfil/perfil')
+   },
+   // AUTH
+   {
       path: 'registro',
       loadComponent: () => import('./auth/pages/registro/registro')
    },
@@ -33,6 +42,15 @@ export const routes: Routes = [
    {
       path: 'recuperar-password',
       loadComponent: () => import('./auth/pages/recuperar-contrasena/recuperar-contrasena')
+   },
+   //ADMIN
+   {
+      path: 'inventario',
+      loadComponent: () => import('./admin/pages/inventario/inventario')
+   },
+   {
+      path: 'clientes',
+      loadComponent: () => import('./admin/pages/clientes/clientes')
    },
    { path: '', redirectTo: 'inicio', pathMatch: 'full' },
    { path: '**', redirectTo: 'inicio' }

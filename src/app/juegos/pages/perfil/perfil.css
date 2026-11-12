@@ -1,0 +1,24 @@
+.img-perfil{
+    width: auto;
+    height: 120px;  
+}
+
+.badge-estrategia {
+    background-color: var(--estrategia) !important;
+    color: #ffffff !important;
+}
+
+.badge-cartas {
+    background-color: var(--cartas); 
+    color: #ffffff !important;
+}
+
+.badge-familiares {
+    background-color: var(--familiares); 
+    color: #ffffff !important;
+}
+
+.badge-party {
+    background-color: var(--party); 
+    color: #ffffff !important;
+}
