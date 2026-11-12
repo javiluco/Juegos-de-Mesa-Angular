@@ -183,6 +183,22 @@ a {
     animation: sello 1.6s ease-in-out infinite;
 }
 
+.card.estrategia {
+    background-color: var(--estrategia);
+}
+
+.card.familiares {
+    background-color: var(--familiares);
+}
+
+.card.cartas {
+    background-color: var(--cartas);
+}
+
+.card.party {
+    background-color: var(--party);
+}
+
 .mesure-card {
     height: 100%;
     display: flex;
