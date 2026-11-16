@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-interface juegosInicialesInterface {
+interface JuegosInicialesInterface {
     id: number;
     nombre: string;
     categoria: string;
@@ -17,7 +17,7 @@ interface juegosInicialesInterface {
 })
 export default class Inventario {
 
-  juegosIniciales: juegosInicialesInterface[] = [
+  juegosIniciales: JuegosInicialesInterface[] = [
     { id: 1, nombre: 'Dominio de los Elementos', categoria: 'estrategia', precio: 20000, stock: 8, imagen: 'img/estrategia/dominio.png' },
     { id: 2, nombre: 'Caza Bombas', categoria: 'estrategia', precio: 45000, stock: 3, imagen: 'img/estrategia/caza.png' },
     { id: 3, nombre: 'Criaturas De Las Sombras', categoria: 'estrategia', precio: 35000, stock: 0, imagen: 'img/estrategia/criaturas.png' },
