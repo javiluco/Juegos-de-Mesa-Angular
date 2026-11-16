@@ -1,0 +1,14 @@
+<div class="col d-flex justify-content-center h-100">
+    <article class="card theme-accent" [class]="juego().tema">
+        <img [src]="juego().img" class="card-img-top card-img " [alt]="juego().titulo">
+        @if ( juego().descuento > 0) {
+            <span class="descuento">-{{juego().descuento}}%</span>
+        }
+        <div class="card-body card-body-mesure ">
+            <h4 class="card-title">{{juego().titulo}}</h4>
+            <p>${{juego().valor}}</p>
+            <p class="card-text">{{juego().descripcion}}</p>
+            <button class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">Comprar</button>
+        </div>
+    </article>
+</div>

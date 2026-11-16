@@ -38,7 +38,7 @@ const infoCategorias =[
 ]
 
 @Component({
-  imports: [RouterLink, CatagoloCard],
+  imports: [ CatagoloCard],
   selector: 'app-inicio',
   styleUrl: './inicio.css',
   templateUrl: './inicio.html',
