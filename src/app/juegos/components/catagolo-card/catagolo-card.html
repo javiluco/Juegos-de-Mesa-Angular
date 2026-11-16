@@ -1,0 +1,14 @@
+<div class="col d-flex justify-content-center">
+    <section [class]="categoria().tema" class="card theme-accent card-section">
+        <img [src]="categoria().img" class="card-img-top card-img" alt="Estrategia">
+        @if (categoria().descuento > 0) {
+            <span class="descuento">-{{categoria().descuento}} %</span>
+        }
+        <div class="card-body card-body-mesure">
+            <h4 class="card-title">{{categoria().categoria}}</h4>
+            <p class="card-text">{{categoria().descripcion}}</p>
+            <a [routerLink]="categoria().route" class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">Ver
+                mas juegos</a>
+        </div>
+    </section>
+</div>

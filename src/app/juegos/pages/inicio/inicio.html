@@ -28,56 +28,9 @@
     <div class="container aparecer py-4">
         <h2 class="sc-title">CATÁLOGO</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
-
-            <div class="col d-flex justify-content-center">
-                <section class="card estrategia theme-accent card-section">
-                    <img src="/estrategia.jpeg" class="card-img-top card-img" alt="Estrategia">
-                    <span class="descuento">-25%</span>
-                    <div class="card-body card-body-mesure">
-                        <h4 class="card-title">Estrategia</h4>
-                        <p class="card-text">Planifica, negocia y conquista. Ponte a prueba con estos juegos.</p>
-                        <a routerLink="/estrategia" class="btn btn-primary"
-                            style="margin-top: auto; align-self: flex-start;">Ver mas juegos</a>
-                    </div>
-                </section>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-                <section class="card familiares theme-primary card-section">
-                    <img src="/familiares2.png" class="card-img-top card-img" alt="Familiares">
-                    <div class="card-body card-body-mesure">
-                        <h4 class="card-title">Familiares</h4>
-                        <p class="card-text">Para jugar con toda la Familia. Apta para todas las edades.</p>
-                        <a routerLink="/familiares" class="btn btn-primary"
-                            style="margin-top: auto; align-self: flex-start;">Ver mas juegos</a>
-                    </div>
-                </section>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-                <section class="card cartas theme-danger card-section">
-                    <img src="/cartas2.png" class="card-img-top card-img" alt="Cartas">
-                    <div class="card-body card-body-mesure">
-                        <h4 class="card-title">Cartas</h4>
-                        <p class="card-text">Partidas rápidas en cualquier mesa. Gran variedad de juegos.</p>
-                        <a routerLink="/cartas" class="btn btn-primary"
-                            style="margin-top: auto; align-self: flex-start;">Ver mas juegos</a>
-                    </div>
-                </section>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-                <section class="card party theme-warning card-section">
-                    <img src="/party2.png" class="card-img-top card-img" alt="Juegos Party">
-                    <div class="card-body card-body-mesure">
-                        <h4 class="card-title">Juegos Party</h4>
-                        <p class="card-text">Risas y entretencion para grupos grandes.</p>
-                        <a routerLink="/juegos-party" class="btn btn-primary"
-                            style="margin-top: auto; align-self: flex-start;">Ver mas juegos</a>
-                    </div>
-                </section>
-            </div>
-
+            @for (categoria of categorias; track categoria.route) {
+                <catagolo-card [categoria]="categoria" />
+            }
         </div>
 
     </div>
