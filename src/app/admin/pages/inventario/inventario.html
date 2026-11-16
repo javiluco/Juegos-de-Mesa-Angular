@@ -18,19 +18,19 @@
 
                         <div class="inventario-resumen">
                             <div>
-                                <span class="resumen-num " id="stateJuegos">0</span>
+                                <span class="resumen-num " id="stateJuegos">{{ totalJuegos() }}</span>
                                 <span class="resumen-txt">Juegos</span>
                             </div>
                             <div>
-                                <span class="resumen-num " id="stateUnidades">0</span>
+                                <span class="resumen-num " id="stateUnidades">{{ totalUnidades() }}</span>
                                 <span class="resumen-txt">Unidades en stock</span>
                             </div>
                             <div>
-                                <span class="resumen-num " id="stateValor">$0</span>
+                                <span class="resumen-num " id="stateValor">{{ valorInventario() | currency:'CLP' }}</span>
                                 <span class="resumen-txt">Valor del inventario</span>
                             </div>
                             <div>
-                                <span class="resumen-num " id="stateSinStock">0</span>
+                                <span class="resumen-num " id="stateSinStock">{{ sinStock() }}</span>
                                 <span class="resumen-txt">Sin stock</span>
                             </div>
                         </div>
@@ -60,7 +60,9 @@
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider" id="tablaJuegos">
-
+                                        @for (juego of juegosIniciales(); track juego.id) {
+                                            <tr inventario-table [juego]="juego"></tr>
+                                        }
 
                                     </tbody>
                                 </table>
