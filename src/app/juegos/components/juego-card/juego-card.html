@@ -1,5 +1,5 @@
 <div class="col d-flex justify-content-center h-100">
-    <article class="card theme-accent" [class]="juego().tema">
+    <article class="card" [class]="juego().tema">
         <img [src]="juego().img" class="card-img-top card-img " [alt]="juego().titulo">
         @if ( juego().descuento > 0) {
             <span class="descuento">-{{juego().descuento}}%</span>

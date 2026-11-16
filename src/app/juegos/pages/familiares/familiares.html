@@ -9,69 +9,10 @@
     <section class="aparecer container py-4">
         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
 
-            <div class="col d-flex justify-content-center">
-                <article class="card familiares theme-primary">
-                    <img src="/familiar/smart.png" class="card-img-top card-img " alt="Smart 10 - Familiar">
-                    <span class="descuento">-5%</span>
-                    <div class="card-body card-body-mesure ">
-                        <h4 class="card-title">Smart 10 - Familiar</h4>
-                        <p>$20.000</p>
-                        <p class="card-text">La agilidad de Smart 10 ahora también adaptada a los miembros más
-                            jóvenes para que las
-                            partidas sean para toda la familia.
-
-                            Smart10 es un juego de preguntas donde los jugadores no deberán esperar demasiado su
-                            turno.
-                            Las preguntas ofrecen 10 posibles respuestas y todos los jugadores tendrán la
-                            oportunidad de
-                            contestar en cada una de las preguntas.</p>
-                        <button class="btn btn-primary"
-                            style="margin-top: auto; align-self: flex-start;">Comprar</button>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-                <article class="card familiares theme-primary">
-                    <img src="/familiar/Got Five.png" class="card-img-top card-img" alt="Got Five">
-                    <div class="card-body">
-                        <h4 class="card-title">Got Five</h4>
-                        <p>$30.000</p>
-                        <p class="card-text">¡Descifra los números ocultos antes que los demás!
-
-                            En Got Five!, cada jugador deberá resolver un rompecabezas lógico utilizando deducción,
-                            observación y pistas compartidas para descubrir los cinco números secretos escondidos en
-                            su
-                            soporte. El desafío está en que puedes ver las fichas de todos los demás… excepto las
-                            tuyas.
-                        </p>
-                        <button class="btn btn-primary"
-                            style="margin-top: auto; align-self: flex-start;">Comprar</button>
-                    </div>
-                </article>
-            </div>
-
-            <div class="col d-flex justify-content-center">
-                <article class="card familiares theme-primary">
-                    <img src="/familiar/meme.png" class="card-img-top card-img"
-                        alt="What Do You Meme? Edición Familiar">
-                    <div class="card-body card-body-mesure">
-                        <h4 class="card-title">What Do You Meme? Edición Familiar</h4>
-                        <p>$10.000</p>
-                        <p class="card-text">¡Tu juego de memes favorito ahora para toda la familia!
-                            Compite por crear el meme más divertido combinando cartas de Oración con la carta de
-                            Foto
-                            que esté en juego.
-                            Contenido:
-                            300 cartas de Oración
-                            65 cartas de Foto
-                            1 Caballete</p>
-                        <button class="btn btn-primary"
-                            style="margin-top: auto; align-self: flex-start;">Comprar</button>
-                    </div>
-                </article>
-            </div>
-
+            @for (familiar of juesgosFamiliares; track familiar.id) {
+                <juego-card [juego]="familiar"/>
+            }
+          
         </div>
 
     </section>

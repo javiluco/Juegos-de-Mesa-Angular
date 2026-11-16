@@ -10,7 +10,7 @@ const infoJuegosEstrategia =[
     "valor": 20000,
     "descuento": 25,
     "img": "/estrategia/dominio.png",
-    "tema": "estrategia"
+    "tema": "estrategia theme-accent"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@ const infoJuegosEstrategia =[
     "valor": 45000,
     "descuento": 0,
     "img": "/estrategia/caza.png",
-    "tema": "estrategia"
+    "tema": "estrategia theme-accent"
   },
   {
     "id": 3,
@@ -28,7 +28,7 @@ const infoJuegosEstrategia =[
     "valor": 35000,
     "descuento": 0,
     "img": "/estrategia/criaturas.png",
-    "tema": "estrategia"
+    "tema": "estrategia theme-accent"
   },
 ];
 
