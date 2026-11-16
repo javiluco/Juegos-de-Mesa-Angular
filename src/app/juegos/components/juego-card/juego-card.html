@@ -6,7 +6,7 @@
         }
         <div class="card-body card-body-mesure ">
             <h4 class="card-title">{{juego().titulo}}</h4>
-            <p>${{juego().valor}}</p>
+            <p>{{juego().valor| currency:'CLP' }}</p>
             <p class="card-text">{{juego().descripcion}}</p>
             <button class="btn btn-primary" style="margin-top: auto; align-self: flex-start;">Comprar</button>
         </div>

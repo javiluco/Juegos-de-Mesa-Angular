@@ -1,3 +1,4 @@
+import { CurrencyPipe } from '@angular/common';
 import { Component, input} from '@angular/core';
 
 export interface JuegoDescriptionCard {
@@ -11,7 +12,7 @@ export interface JuegoDescriptionCard {
 }
 
 @Component({
-  imports: [],
+  imports: [CurrencyPipe],
   selector: 'juego-card',
   styleUrl: './juego-card.css',
   templateUrl: './juego-card.html',
