@@ -1,0 +1,14 @@
+<th scope="row">{{usuarioDB().id}}</th>
+<td>
+    {{usuarioDB().nombre}} {{usuarioDB().apellido}}
+</td>
+<td>  </td>
+<td> {{usuarioDB().usuario}} </td>
+<td>{{usuarioDB().correo}}</td>
+<td>{{usuarioDB().direccion}}</td>
+<td>
+    <div class="inventario-acciones">
+        <button type="button" class="inventario-btn" [attr.data-editar]="usuarioDB().id">Editar</button>
+        <button type="button" class="inventario-btn peligro" [attr.data-eliminar]="usuarioDB().id">Eliminar</button>
+    </div>
+</td>

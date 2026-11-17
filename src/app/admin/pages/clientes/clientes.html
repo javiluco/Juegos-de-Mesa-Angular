@@ -36,7 +36,9 @@
                                         </tr>
                                     </thead>
                                     <tbody class="table-group-divider" id="tablaClientes">
-
+                                        @for (usuarioDB of usuarios(); track usuarioDB.id) {
+                                            <tr cliente-table [usuarioDB]="usuarioDB"></tr>
+                                        }
 
                                     </tbody>
                                 </table>
