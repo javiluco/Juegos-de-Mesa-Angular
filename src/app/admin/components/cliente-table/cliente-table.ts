@@ -1,8 +1,9 @@
 import { Component, input } from '@angular/core';
 import { ClientesInterface } from '../../pages/clientes/clientes';
+import { EdadPipe } from '../../../pipes/edad-pipe';
 
 @Component({
-  imports: [],
+  imports: [EdadPipe],
   selector: 'tr[cliente-table]',
   styleUrl: './cliente-table.css',
   templateUrl: './cliente-table.html',

@@ -2,7 +2,7 @@
 <td>
     {{usuarioDB().nombre}} {{usuarioDB().apellido}}
 </td>
-<td>  </td>
+<td>{{ usuarioDB().fechaNacimiento | edad }}  </td>
 <td> {{usuarioDB().usuario}} </td>
 <td>{{usuarioDB().correo}}</td>
 <td>{{usuarioDB().direccion}}</td>
